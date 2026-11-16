@@ -13,8 +13,7 @@ what was agreed above.
 ## Reading the Constraints
 
 Read `trustfall/constraints.md` before writing any Code. Constraints say how the
-project is built, and they only affect Code. A Constraint that cannot be met is
-reported to the user; it is never weakened.
+project is built, and they only affect Code.
 
 ## One code unit per Module
 
@@ -30,7 +29,6 @@ yours to make.
 
 ## Validating Code against the Levels above
 
-Validate with the `trustfall-validation` skill while you work, after each Module
-or User story, not only at the end. The work is done only when a full run of
+Validate with the `trustfall-validation` skill. The work is done only when a full run of
 the `trustfall-validation` skill passes every Level check, Constraint check and
 Commandment.

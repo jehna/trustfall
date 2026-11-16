@@ -37,9 +37,7 @@ the Level you are on, and only that one.
 
 On every Level, make the Level perfect for what is known from the Levels above
 it. Do not read or consider the Levels below; work already done there must not
-bias the design. When a Level already exists, design it as it should be from
-the Levels above, then compare with the existing file only to keep naming and
-order stable so the diff stays small.
+bias the design.
 
 A Level is finished when its Items pass validation. Only then descend.
 
@@ -51,8 +49,7 @@ Use the exact names of Concepts from Level 1 on every Level.
 ## Writing Items
 
 Write the Level to its file in the Trustfall folder, as Markdown, in the format
-its Level skill gives. Put one Item per line where the format allows, so every
-change is a readable line diff.
+its Level skill gives.
 
 ## Validating Items against the Levels above
 
@@ -82,7 +79,7 @@ each answer as a Constraint in `trustfall/constraints.md`:
 ```
 
 Every Constraint has a stable ID, a statement and a `Verify:` line that tells a
-Validator subagent how to check it. IDs are never reused.
+Validator subagent how to check it.
 
 ## Preferring simplicity
 

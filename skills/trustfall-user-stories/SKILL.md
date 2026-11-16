@@ -22,8 +22,6 @@ behaviour can be validated without knowing how it is built.
 ```
 
 - Every Item is one line: `S<n>: I want <capability> so that <reason>.`
-- IDs are stable. Once a story has been validated, its ID is never renumbered
-  or reused.
 - Domain words are the capitalised Concepts from Level 1, spelled exactly the
   same. A missing Concept means going back up to Level 1.
 - Every Concept is used by at least one story.

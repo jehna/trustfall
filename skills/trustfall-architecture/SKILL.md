@@ -27,10 +27,8 @@ flowchart TD
 ```
 ````
 
-- Every node is a Block: a concrete technology the project does not implement
-  itself, named after the one instance of it the project has, e.g.
-  `Orders service` for a Node.js service or `Task database` for a PostgreSQL
-  database. Stores use the cylinder shape `[( )]`.
+- Every node is a Block: a named instance of a technology the project uses
+  but does not implement, e.g. `Task database` for a PostgreSQL database. Stores use the cylinder shape `[( )]`.
 - Every edge is labelled with what flows, in the words of the Concepts.
 - When one edge fans out to or gathers from several Blocks, route it through a
   junction node, `j@{ shape: f-circ }`, so it is drawn once.

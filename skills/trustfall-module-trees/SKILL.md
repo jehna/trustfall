@@ -37,6 +37,4 @@ Task list frontend
   Blocks it connects.
 - A Module that several Blocks would need lives once, in the Block that is
   always present with them.
-- When one file grows too large to review, split it into one file per Block
-  under `trustfall/4-module-trees/`.
 - Functions, wording and file paths belong to Code.

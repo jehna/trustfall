@@ -10,8 +10,7 @@ description: Trustfall Level 1 — design the Concepts of a project, its shared 
 Concepts give everyone working on the project a shared vocabulary, so we can
 communicate efficiently. Every later Level speaks in these words.
 
-Concepts are the topmost Level: there are no Levels above to read. They come
-from what the user tells about the project, so ask rather than assume.
+Concepts are the topmost Level: there are no Levels above to read.
 
 ## Concept format
 
