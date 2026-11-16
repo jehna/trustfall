@@ -27,16 +27,18 @@ Every Commandment is its own check.
 
 Run the checks for the Level that was written, each as its own check:
 
-| Level        | Checks                                                                                                                                                     |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Concepts     | Every Concept has one name and one meaning. Concepts contain no behaviour or technology.                                                                   |
-| User stories | Every story uses only Concepts. Every Concept is used by a story.                                                                                          |
-| Architecture | Every story is possible with the drawn Blocks and edges. Every Block and edge has a source above. Only Mermaid diagrams of Blocks, nothing inside them.    |
-| Module trees | Every Block has one tree and every tree a Block. Every edge is implemented by a Module. Every Module has a source above. Names are obvious, no duplicates. |
-| Code         | Every Module has a code unit. Every code unit belongs to a Module or a Constraint. No behaviour beyond the User stories.                                   |
+| Level        | Checks                                                                                                                                                                                                                |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Concepts     | Every Concept has one name and one meaning. Concepts contain no behaviour or technology.                                                                                                                              |
+| User stories | Every capitalised term in a story is a Concept. Every Concept is used by a story.                                                                                                                                     |
+| Architecture | Every story is possible with the drawn Blocks and edges. Every Block and edge has a source above. Only Mermaid diagrams of Blocks, nothing inside them.                                                               |
+| Module trees | Every Block has one tree and every tree a Block. Every edge is implemented by a Module. Every Module has a source above. Names are obvious, no duplicates; Modules that implement different edges are not duplicates. |
+| Code         | Every Module has a code unit. Every code unit and every detail Code adds serves a Module or a Constraint. No behaviour beyond the User stories.                                                                       |
 
-Capitalised terms on any Level must be Concepts; Module names and Code may use
-plain language.
+A capitalised term in the middle of a sentence on any Level must be a Concept,
+in any word form, such as Descend for Descent.
+A word that starts with a lowercase letter is plain language and needs no
+Concept. Block names, Module names and Code may use plain language.
 
 A full run, before work is called done, must pass every Level check, every
 Commandment and every Constraint.

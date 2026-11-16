@@ -18,8 +18,9 @@ project is built, and they only affect Code.
 ## One code unit per Module
 
 Every Module of the Module trees becomes one code unit — a file, a component, a
-section — named after the Module. Every code unit belongs to a Module, or is
-tooling a Constraint requires. Code that has no Module means going back up.
+section — named after the Module. Code may add details of its own, such as configuration
+or ignore files, when they serve a Module or a Constraint. Code that serves
+neither means going back up.
 
 ## Writing Code
 

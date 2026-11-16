@@ -36,5 +36,6 @@ Task list frontend
 - Every edge of the Architecture is implemented by a Module in the trees of the
   Blocks it connects.
 - A Module that several Blocks would need lives once, in the Block that is
-  always present with them.
+  always present with them. Modules that implement different edges are not
+  duplicates.
 - Functions, wording and file paths belong to Code.
