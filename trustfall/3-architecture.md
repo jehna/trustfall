@@ -1,5 +1,7 @@
 # Architecture
 
+## Loading the Levels
+
 ```mermaid
 flowchart TD
   trustfall[Trustfall skill]
@@ -10,11 +12,13 @@ flowchart TD
   modules[4 Module trees skill]
   code[5 Code skill]
   levels[(Trustfall folder in the file system)]
-  trustfall -- loads one Level at a time, from the topmost --- load
+  trustfall -- loads one Level at a time, from the topmost, with the Levels above it --- load
   load --> concepts & stories & architecture & modules & code
   trustfall -- reads the Levels above --> levels
   trustfall -- before Code, writes the initial Constraints asked from the user --> levels
 ```
+
+## Writing Items and Code
 
 ```mermaid
 flowchart TD
@@ -26,6 +30,8 @@ flowchart TD
   code -- reads the Constraints --> levels
   code -- writes --> source
 ```
+
+## Validating
 
 ```mermaid
 flowchart TD

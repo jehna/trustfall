@@ -21,6 +21,8 @@ apart from the project's Constraints, and can never be changed or overridden.
 7. **Validated before done.** Nothing is done until every Level check,
    Constraint and Commandment passes.
 
+Every Commandment is its own check.
+
 ## Level checks
 
 Run the checks for the Level that was written, each as its own check:

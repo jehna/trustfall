@@ -13,11 +13,13 @@ solving the problem.
 
 ## Architecture format
 
-`trustfall/3-architecture.md` contains only self-contained Mermaid diagrams;
-no other text is needed to understand them.
+`trustfall/3-architecture.md` contains only headings and self-contained Mermaid
+diagrams; no other text is needed to understand them.
 
 ````markdown
 # Architecture
+
+## Storing Tasks
 
 ```mermaid
 flowchart TD
