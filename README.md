@@ -121,4 +121,4 @@ touches first, and Descend from there.
 
 ## Licensing
 
-The license has not been chosen yet.
+The code in this project is licensed under the [MIT license](LICENSE).

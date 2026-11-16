@@ -1,6 +1,7 @@
 {
   "name": "trustfall",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "format": "prettier --write \"**/*.md\"",
     "lint": "markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
