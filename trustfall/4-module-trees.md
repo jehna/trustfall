@@ -92,5 +92,6 @@ Source code folder
 ```text
 Validator subagent
 ├── Brief
+├── Reading the Levels, Constraints and Code
 └── Verdict
 ```

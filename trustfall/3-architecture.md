@@ -1,7 +1,7 @@
 # Architecture
 
 ```mermaid
-flowchart TD
+flowchart LR
   trustfall[Trustfall skill]
   load@{ shape: f-circ }
   concepts[1 Concepts skill]
@@ -17,6 +17,7 @@ flowchart TD
   subagent[Validator subagent with no history]
   trustfall -- loads one Level at a time, from the topmost --- load
   load --> concepts & stories & architecture & modules & code
+  trustfall -- reads the Levels above --> levels
   trustfall -- before Code, writes the initial Constraints asked from the user --> levels
   concepts & stories & architecture & modules --- write
   write -- write Level's own Items --> levels
