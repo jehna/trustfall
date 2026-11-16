@@ -27,6 +27,15 @@ The agent loads the `trustfall` skill, asks you about the project, and starts
 the Descent from the first Level, Concepts. Each Level is written to a
 `trustfall/` folder in your project.
 
+To understand Trustfall, read how it is designed with itself, in
+[`trustfall/`](trustfall/):
+
+1. [Concepts](trustfall/1-concepts.md)
+2. [User stories](trustfall/2-stories.md)
+3. [Architecture](trustfall/3-architecture.md)
+4. [Module trees](trustfall/4-module-trees.md)
+5. [Constraints](trustfall/constraints.md)
+
 ### Initial Configuration
 
 Without the installer, copy or symlink the folders in `skills/` to your agent's

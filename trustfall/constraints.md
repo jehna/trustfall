@@ -10,3 +10,5 @@
   Verify: README.md follows the section structure of the template at <https://github.com/jehna/readme-best-practices>.
 - C5: Validator subagents run in parallel.
   Verify: the skills instruct launching every Validator subagent of a validation run at once.
+- C6: README tells the reader to read the files in the Trustfall folder and links to each of them.
+  Verify: README.md tells the reader to read the files in `trustfall/` and links to every file in that folder.
