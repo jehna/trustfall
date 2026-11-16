@@ -50,18 +50,17 @@ Every Constraint in `trustfall/constraints.md` is its own check, using its
 After a change, validate only what it touched: the Items and Code in its diff,
 and every Item and code unit that refers to, or is referred to by, something
 the diff changed or removed. Run the Level checks of every Level the change
-touched, and every Commandment, on those parts only; the Levels above them are
-read as they are, not judged. A check that matches two lists, such as every
-Concept is used by a story, compares the whole lists. Run every Constraint
-check every time, on the whole project.
+touched, every Commandment and every Constraint on those parts only; the Levels
+above them are read as they are, not judged. A check that matches two lists,
+such as every Concept is used by a story, compares the whole lists. A new or
+changed Constraint is checked on the whole project.
 
 The first validation of a project, and any validation after a failed or skipped
 one, checks the whole project.
 
-Before work is called done, every Level check and Commandment must pass on
-what the change touched, and every Constraint must pass. Everything else passed
-when it last changed, so the whole project then passes every Level check,
-Constraint and Commandment.
+Before work is called done, every Level check, Commandment and Constraint must
+pass on what the change touched. Everything else passed when it last changed,
+so the whole project then passes every Level check, Constraint and Commandment.
 
 ## One Validator subagent per check
 

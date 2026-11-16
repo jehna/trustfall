@@ -15,4 +15,4 @@
 - S13: I want every Level kept as simple as possible so that there is nothing extra to review.
 - S14: I want mechanical checks to run on a light model so that validation stays fast and cheap.
 - S15: I want every check made by a checker with no history of the work so that the history cannot bias whether the check is correct.
-- S16: I want only the parts a change touched validated after the change, together with every Constraint, so that validation does not go through the whole project every time.
+- S16: I want only the parts a change touched validated after the change, against every Commandment and Constraint, and a new or changed Constraint checked on the whole project, so that validation does not go through the whole project every time.

@@ -31,5 +31,5 @@ yours to make.
 ## Validating the Code a change touched
 
 Validate the Code the change touched with the `trustfall-validation` skill. The
-work is done only when every Level check and Commandment passes on what the
-change touched, and every Constraint check passes.
+work is done only when every Level check, Commandment and Constraint passes on
+what the change touched.

@@ -43,7 +43,7 @@ flowchart TD
   source[(Source code folder in the file system)]
   trustfall -- validates the Items a change touched against the Levels above with --> validation
   code -- validates the Code a change touched against the Levels above with --> validation
-  validation -- validates every Constraint, and the Commandments on what a change touched, with --> subagent
+  validation -- validates the Commandments and the Constraints on what a change touched, and a new or changed Constraint on the whole project, with --> subagent
   subagent -- reads Levels and Constraints --> levels
   subagent -- reads --> source
   subagent -- returns Pass, or Fail with its reasons --> validation

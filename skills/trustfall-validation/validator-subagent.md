@@ -16,15 +16,14 @@ Rule: <the check, Commandment or Constraint, quoted verbatim>
 
 ## What the change touched
 
-For a Level check or a Commandment:
-
 ```text
 Judge only these parts; read everything else only as context:
 <the files and lines the change touched, or its diff>
 ```
 
-For a Constraint, leave this part out: a Constraint is checked on the whole
-project.
+Leave this part out when the check covers the whole project: the first
+validation, a validation after a failed or skipped one, and a new or changed
+Constraint.
 
 ## Reading the Levels, Constraints and Code
 
