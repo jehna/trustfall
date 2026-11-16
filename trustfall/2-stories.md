@@ -9,6 +9,6 @@
 - S7: I want every Constraint and Commandment checked before work is called done so that I can trust the output matches what is planned.
 - S8: I want to define the project's Concepts first so that we share a vocabulary and can communicate efficiently.
 - S9: I want to write down what the project must let its users do as User stories so that its behaviour can be validated without knowing how it is built.
-- S10: I want an Architecture of the big blocks and how they connect so that I can validate that we have the right building blocks for solving the problem.
-- S11: I want a Module tree for each Architecture block so that I have a high-level view of how the Code is formed, and no duplicates arise because this Level already shows where each piece of Code belongs.
+- S10: I want an Architecture of the Blocks and how they connect so that I can validate that we use the right pre-made building blocks for solving the problem.
+- S11: I want a Module tree for each Block so that I have a high-level view of how the Code is formed, and no duplicates arise because this Level already shows where each piece of Code belongs.
 - S12: I want Code that implements all the Levels above so that every part of it can be traced back to what was agreed above.
