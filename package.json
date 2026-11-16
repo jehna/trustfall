@@ -1,0 +1,18 @@
+{
+  "name": "trustfall",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write \"**/*.md\"",
+    "lint": "markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
+    "check": "prettier --check \"**/*.md\" && npm run lint",
+    "prepare": "simple-git-hooks"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npm run check"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "^0.18.1",
+    "prettier": "^3.6.2",
+    "simple-git-hooks": "^2.13.1"
+  }
+}
