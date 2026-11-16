@@ -1,7 +1,7 @@
 # Concepts
 
 ```text
-Trustfall — a way of working that maximises trust between a Human and an Agent or a teammate
+Trustfall — a way of working that maximises trust between a Human and an Agent or a teammate; "the project" below means any project built with Trustfall
 ├── Descent — working through the Levels one at a time, always starting from the topmost Level
 │   └── Level — one layer of the project's description, derived only from the Levels above it, the "what" of this project
 │       ├── Level types

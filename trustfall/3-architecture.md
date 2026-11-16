@@ -12,20 +12,20 @@ flowchart TD
   write@{ shape: f-circ }
   check@{ shape: f-circ }
   validation[Validation skill]
-  levels[(Trustfall folder)]
-  source[(Source code folder)]
-  subagent[Validator subagent]
+  levels[(Trustfall folder in the file system)]
+  source[(Source code folder in the file system)]
+  subagent[Validator subagent with no history]
   trustfall -- loads one Level at a time, from the topmost --- load
   load --> concepts & stories & architecture & modules & code
+  trustfall -- before Code, writes the initial Constraints asked from the user --> levels
   concepts & stories & architecture & modules --- write
   write -- write Level's own Items --> levels
-  %%code -- reads all the Levels --> levels
   code -- writes --> source
   concepts & stories & architecture & modules --- check
   check -- validate their Items against the Levels above with --> validation
   code -- validates its Code against the Levels above with --> validation
-  validation -- validates with no history --> subagent
+  validation -- validates Constraints and Commandments with --> subagent
   subagent -- reads Levels and Constraints --> levels
   subagent -- reads --> source
-  subagent -- returns Pass or Fail --> validation
+  subagent -- returns Pass, or Fail with its reasons --> validation
 ```
