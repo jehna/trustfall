@@ -7,8 +7,8 @@ Trustfall — a way of working that maximises trust between a human and an agent
 │       ├── Level types
 │       │   ├── 1 Concepts — what the project talks about
 │       │   ├── 2 User stories — what the project must let its users do
-│       │   ├── 3 Architecture — only headings and self-contained Mermaid diagrams of the Blocks of the project and how they connect
-│       │   │   └── Block — a named instance of a technology, e.g. Task database (PostgreSQL); the project builds on the technology but does not implement it
+│       │   ├── 3 Architecture — the Blocks of the project and how they connect
+│       │   │   └── Block — a named pre-made building block the project builds on but does not implement
 │       │   ├── 4 Module trees — what is built on each Block
 │       │   │   └── Module — one part of what is built on a Block
 │       │   └── 5 Code — the implementation
