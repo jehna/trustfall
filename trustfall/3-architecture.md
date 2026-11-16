@@ -11,7 +11,7 @@ flowchart TD
   code[5 Code skill]
   write@{ shape: f-circ }
   check@{ shape: f-circ }
-  validation[Validation skill]
+  validation[Validation skill holding the Commandments]
   levels[(Trustfall folder in the file system)]
   source[(Source code folder in the file system)]
   subagent[Validator subagent with no history]
