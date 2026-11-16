@@ -51,11 +51,11 @@ Use the exact names of Concepts from Level 1 on every Level.
 Write the Level to its file in the Trustfall folder, as Markdown, in the format
 its Level skill gives.
 
-## Validating Items against the Levels above
+## Validating the Items a change touched
 
-After writing a Level, validate it with the `trustfall-validation` skill: run
-the Level checks between this Level and the Levels above. Fix every Fail before
-descending.
+After writing a Level, validate the Items the change touched with the
+`trustfall-validation` skill: run the Level checks between this Level and the
+Levels above. Fix every failing check before descending.
 
 ## Going back up
 

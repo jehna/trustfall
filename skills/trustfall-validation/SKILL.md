@@ -40,21 +40,36 @@ in any word form, such as Descend for Descent.
 A word that starts with a lowercase letter is plain language and needs no
 Concept. Block names, Module names and Code may use plain language.
 
-A full run, before work is called done, must pass every Level check, every
-Commandment and every Constraint.
-
 ## Constraint checks
 
 Every Constraint in `trustfall/constraints.md` is its own check, using its
 `Verify:` line.
+
+## Checking only what a change touched
+
+After a change, validate only what it touched: the Items and Code in its diff,
+and every Item and code unit that refers to, or is referred to by, something
+the diff changed or removed. Run the Level checks of every Level the change
+touched, and every Commandment, on those parts only; the Levels above them are
+read as they are, not judged. A check that matches two lists, such as every
+Concept is used by a story, compares the whole lists. Run every Constraint
+check every time, on the whole project.
+
+The first validation of a project, and any validation after a failed or skipped
+one, checks the whole project.
+
+Before work is called done, every Level check and Commandment must pass on
+what the change touched, and every Constraint must pass. Everything else passed
+when it last changed, so the whole project then passes every Level check,
+Constraint and Commandment.
 
 ## One Validator subagent per check
 
 Give every check to its own subagent that has no history of the work: a fresh
 subagent, never a fork of the current conversation. Launch all checks at once
 so they run in parallel, and brief each one with
-[validator-subagent.md](validator-subagent.md). Tell it only the check, never
-what you built or what you expect.
+[validator-subagent.md](validator-subagent.md). Tell it only the check and the
+parts the change touched, never what you built or what you expect.
 
 If the agent cannot start subagents, ask the user to open a fresh session for
 each check and paste the brief there.

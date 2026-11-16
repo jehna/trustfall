@@ -28,8 +28,8 @@ Write the Code to the project's source code folder. Decisions inside a code
 unit — functions, types, wording, libraries — belong to this Level and are
 yours to make.
 
-## Validating Code against the Levels above
+## Validating the Code a change touched
 
-Validate with the `trustfall-validation` skill. The work is done only when a full run of
-the `trustfall-validation` skill passes every Level check, Constraint check and
-Commandment.
+Validate the Code the change touched with the `trustfall-validation` skill. The
+work is done only when every Level check and Commandment passes on what the
+change touched, and every Constraint check passes.

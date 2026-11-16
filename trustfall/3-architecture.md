@@ -41,9 +41,9 @@ flowchart TD
   subagent[Validator subagent with no history]
   levels[(Trustfall folder in the file system)]
   source[(Source code folder in the file system)]
-  trustfall -- validates Items against the Levels above with --> validation
-  code -- validates its Code against the Levels above with --> validation
-  validation -- validates Constraints and Commandments with --> subagent
+  trustfall -- validates the Items a change touched against the Levels above with --> validation
+  code -- validates the Code a change touched against the Levels above with --> validation
+  validation -- validates every Constraint, and the Commandments on what a change touched, with --> subagent
   subagent -- reads Levels and Constraints --> levels
   subagent -- reads --> source
   subagent -- returns Pass, or Fail with its reasons --> validation

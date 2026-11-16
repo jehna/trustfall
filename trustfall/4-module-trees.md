@@ -9,7 +9,7 @@ Trustfall skill
 ├── Descent from the topmost Level
 ├── Reading the Levels above
 ├── Writing Items
-├── Validating Items against the Levels above
+├── Validating the Items a change touched
 ├── Going back up
 ├── Asking the initial Constraints before Code
 └── Preferring simplicity
@@ -55,7 +55,7 @@ Trustfall skill
 ├── Reading the Constraints
 ├── One code unit per Module
 ├── Writing Code
-└── Validating Code against the Levels above
+└── Validating the Code a change touched
 ```
 
 ## Validation skill holding the Commandments
@@ -65,6 +65,7 @@ Validation skill holding the Commandments
 ├── Commandments
 ├── Level checks
 ├── Constraint checks
+├── Checking only what a change touched
 ├── One Validator subagent per check
 ├── Light model for mechanical checks
 └── Reporting Verdicts
@@ -93,6 +94,7 @@ Source code folder
 ```text
 Validator subagent with no history
 ├── Brief
+├── What the change touched
 ├── Reading the Levels, Constraints and Code
 └── Verdict
 ```

@@ -14,6 +14,18 @@ Project root: <path>
 Rule: <the check, Commandment or Constraint, quoted verbatim>
 ```
 
+## What the change touched
+
+For a Level check or a Commandment:
+
+```text
+Judge only these parts; read everything else only as context:
+<the files and lines the change touched, or its diff>
+```
+
+For a Constraint, leave this part out: a Constraint is checked on the whole
+project.
+
 ## Reading the Levels, Constraints and Code
 
 ```text
