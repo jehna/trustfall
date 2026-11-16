@@ -1,7 +1,7 @@
 # Concepts
 
 ```text
-Trustfall — a way of working that maximises trust between a Human and an Agent or a teammate
+Trustfall — a way of working that maximises trust between a human and an agent or a teammate
 ├── Descent — working through the Levels one at a time, always starting from the topmost Level
 │   └── Level — one layer of what the project is, derived only from the Levels above it
 │       ├── Level types
@@ -15,5 +15,5 @@ Trustfall — a way of working that maximises trust between a Human and an Agent
 │       └── Item — one single thing on a Level, digestible on its own
 ├── Constraint — a rule that describes "how" things are done in one project. Only affects code.
 ├── Commandment — a rule that comes from Trustfall itself and can never be changed or overridden
-└── Verdict — the result of checking a Constraint or Commandment: Pass, or Fail with its reasons
+└── Verdict — the result of one check: Pass, or Fail with its reasons
 ```

@@ -33,6 +33,9 @@ Run the checks for the Level that was written, each as its own check:
 | Module trees | Every Block has one tree and every tree a Block. Every edge is implemented by a Module. Every Module has a source above. Names are obvious, no duplicates. |
 | Code         | Every Module has a code unit. Every code unit belongs to a Module or a Constraint. No behaviour beyond the User stories.                                   |
 
+Capitalised terms on any Level must be Concepts; Module names and Code may use
+plain language.
+
 A full run, before work is called done, must pass every Level check, every
 Commandment and every Constraint.
 
