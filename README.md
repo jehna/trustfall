@@ -40,7 +40,9 @@ skills folder:
 ## Developing
 
 Trustfall is designed with Trustfall. Its own Levels are in `trustfall/` and the
-skills in `skills/`.
+skills in `skills/`. The skills are linked as project skills for every agent, in
+`.claude/skills/` and `.agents/skills/`, so working on Trustfall uses the
+current skills.
 
 ```shell
 git clone https://github.com/jehna/trustfall.git
