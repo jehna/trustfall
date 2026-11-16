@@ -48,8 +48,8 @@ cd trustfall/
 npm install
 ```
 
-`npm install` installs the Markdown linter and formatter and a pre-commit hook
-that runs them.
+`npm install` installs the Markdown linter and formatter and a Husky pre-commit
+hook that formats and lints every staged Markdown file.
 
 ### Building
 

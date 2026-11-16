@@ -5,14 +5,18 @@
     "format": "prettier --write \"**/*.md\"",
     "lint": "markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
     "check": "prettier --check \"**/*.md\" && npm run lint",
-    "prepare": "simple-git-hooks"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "npm run check"
+    "prepare": "husky"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.1",
     "markdownlint-cli2": "^0.18.1",
-    "prettier": "^3.6.2",
-    "simple-git-hooks": "^2.13.1"
+    "prettier": "^3.6.2"
+  },
+  "lint-staged": {
+    "*.md": [
+      "prettier --write",
+      "markdownlint-cli2"
+    ]
   }
 }
