@@ -1,7 +1,7 @@
 # Architecture
 
 ```mermaid
-flowchart LR
+flowchart TD
   trustfall[Trustfall skill]
   load@{ shape: f-circ }
   concepts[1 Concepts skill]
