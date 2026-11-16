@@ -88,10 +88,10 @@ Source code folder
 └── Project Code
 ```
 
-## Validator subagent
+## Validator subagent with no history
 
 ```text
-Validator subagent
+Validator subagent with no history
 ├── Brief
 ├── Reading the Levels, Constraints and Code
 └── Verdict

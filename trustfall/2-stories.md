@@ -14,3 +14,4 @@
 - S12: I want Code that implements all the Levels above so that every part of it can be traced back to what was agreed above.
 - S13: I want every Level kept as simple as possible so that there is nothing extra to review.
 - S14: I want mechanical checks to run on a light model so that validation stays fast and cheap.
+- S15: I want every check made by a checker with no history of the work so that the history cannot bias whether the check is correct.
