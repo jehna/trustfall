@@ -8,3 +8,5 @@
   Verify: The project's Markdown linter and formatter is automated to pass on every .md file on precommit hook.
 - C4: README uses the template from <https://github.com/jehna/readme-best-practices>
   Verify: README.md follows the section structure of the template at <https://github.com/jehna/readme-best-practices>.
+- C5: Validator subagents run in parallel.
+  Verify: the skills instruct launching every Validator subagent of a validation run at once.

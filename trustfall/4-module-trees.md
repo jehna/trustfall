@@ -66,6 +66,7 @@ Validation skill holding the Commandments
 ├── Level checks
 ├── Constraint checks
 ├── One Validator subagent per check
+├── Light model for mechanical checks
 └── Reporting Verdicts
 ```
 
@@ -76,7 +77,7 @@ Trustfall folder
 ├── Concepts file
 ├── User stories file
 ├── Architecture file
-├── Module trees file(s)
+├── Module trees file
 └── Constraints file
 ```
 

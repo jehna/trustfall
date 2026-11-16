@@ -27,12 +27,13 @@ Run the checks for the Level that was written, each as its own check:
 
 | Level        | Checks                                                                                                                                                     |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Concepts     | Every Concept has one name and one meaning. Concepts contain no behaviour or technology.                                                                   |
 | User stories | Every story uses only Concepts. Every Concept is used by a story.                                                                                          |
 | Architecture | Every story is possible with the drawn Blocks and edges. Every Block and edge has a source above. Only Mermaid diagrams of Blocks, nothing inside them.    |
 | Module trees | Every Block has one tree and every tree a Block. Every edge is implemented by a Module. Every Module has a source above. Names are obvious, no duplicates. |
 | Code         | Every Module has a code unit. Every code unit belongs to a Module or a Constraint. No behaviour beyond the User stories.                                   |
 
-A full run, before work is called done, runs every Level check, every
+A full run, before work is called done, must pass every Level check, every
 Commandment and every Constraint.
 
 ## Constraint checks
@@ -48,14 +49,17 @@ so they run in parallel, and brief each one with
 [validator-subagent.md](validator-subagent.md). Tell it only the check, never
 what you built or what you expect.
 
-Use a light model for mechanical checks (lists that must match) and a stronger
-one for checks that need interpretation (definitions, level of detail).
-
 If the agent cannot start subagents, ask the user to open a fresh session for
 each check and paste the brief there.
 
+## Light model for mechanical checks
+
+Run mechanical checks, where lists must match, on a light model. Run checks
+that need interpretation, such as definitions or level of detail, on a
+stronger model.
+
 ## Reporting Verdicts
 
-Show the user one row per check: the check, Pass or Fail, and the reason. A Fail
+Show the user every Verdict with its reasons. A Fail
 is never explained away. Fix it on the Level where it belongs, going back up if
 needed, and run that check again with a new Validator subagent.
