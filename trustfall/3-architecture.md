@@ -20,6 +20,7 @@ flowchart TD
   trustfall -- before Code, writes the initial Constraints asked from the user --> levels
   concepts & stories & architecture & modules --- write
   write -- write Level's own Items --> levels
+  code -- reads the Constraints --> levels
   code -- writes --> source
   concepts & stories & architecture & modules --- check
   check -- validate their Items against the Levels above with --> validation

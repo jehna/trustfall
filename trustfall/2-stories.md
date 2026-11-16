@@ -12,3 +12,4 @@
 - S10: I want an Architecture of the Blocks and how they connect so that I can validate that we use the right pre-made building blocks for solving the problem.
 - S11: I want a Module tree for each Block so that I have a high-level view of how the Code is formed, and no duplicates arise because this Level already shows where each piece of Code belongs.
 - S12: I want Code that implements all the Levels above so that every part of it can be traced back to what was agreed above.
+- S13: I want every Level kept as simple as possible so that there is nothing extra to review.
