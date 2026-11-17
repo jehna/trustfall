@@ -1,15 +1,16 @@
 # Trustfall
 
-> Agent skills that build trust in code by designing it on five reviewable Levels
+> Agent skills that build trust in code by designing it on six reviewable Levels
 
 ![Trustfall teaser](trustfall-teaser.gif)
 
-Code is the hardest thing to review. Trustfall describes a project on five
-Levels — Concepts, User stories, Architecture, Module trees and Code — and
-designs each Level only from the Levels above it. Every Level is small, plain
-Markdown and validated against the Levels above by fresh agents with no history
-of the work. When you trust the upper Levels, you can trust what follows from
-them, whether the code was written by an agent or a teammate.
+Code is the hardest thing to review. Trustfall describes a project on six
+Levels — Concepts, User stories, Architecture, Module trees, Commits and Code —
+and designs each Level only from the Levels above it. Every Level is small and
+validated against the Levels above by fresh agents with no history of the work.
+Before any Code is written, the Commits of a change are planned as the perfect
+story of how it would be built in a perfect world. When you trust the upper
+Levels, you can trust what follows from them, whether the code was written by an agent or a teammate.
 
 ## Installing / Getting started
 
@@ -84,7 +85,8 @@ repository.
 
 ## Features
 
-- Five Levels, each designed only from the Levels above it
+- Six Levels, each designed only from the Levels above it
+- Commits planned as the perfect story of a change before any Code
 - One skill per Level, loaded one at a time
 - Validation by subagents with no history of the work
 - Commandments that hold in every project, kept apart from its Truths
@@ -93,7 +95,7 @@ repository.
 ## Configuration
 
 Each project configures Trustfall through its Truths in
-`trustfall/truths.md`. The agent asks for them before writing Code.
+`trustfall/truths.md`. The agent asks for them before planning Commits.
 
 ### Truth
 
@@ -101,7 +103,7 @@ Type: `Markdown list item`
 Default: none
 
 A statement that must hold true of the project: how it is built or what it is.
-It only affects Code.
+It only affects Commits and Code.
 
 Example:
 

@@ -1,6 +1,6 @@
 ---
 name: trustfall
-description: Trustfall maximises trust between a human and an agent or a teammate by describing a project on five Levels — Concepts, User stories, Architecture, Module trees and Code — each derived only from the Levels above it. Use when starting a Trustfall project, when changing anything in a project that has a `trustfall/` folder, or when the user mentions Trustfall, Descent, Levels, Truths or Commandments.
+description: Trustfall maximises trust between a human and an agent or a teammate by describing a project on six Levels — Concepts, User stories, Architecture, Module trees, Commits and Code — each derived only from the Levels above it. Use when starting a Trustfall project, when changing anything in a project that has a `trustfall/` folder, or when the user mentions Trustfall, Descent, Levels, Truths or Commandments.
 ---
 
 # Trustfall
@@ -15,7 +15,7 @@ trust everything below them.
 Each Level is made of Items: single things that are digestible on their own.
 
 Levels say **what** is built. Truths say what must hold true of the project:
-how it is built or what it is. They only affect Code. Commandments are
+how it is built or what it is. They only affect Commits and Code. Commandments are
 Trustfall's own rules; they come from the `trustfall-validation` skill and can
 never be changed or overridden.
 
@@ -27,7 +27,8 @@ never be changed or overridden.
 | 2   | User stories | `trustfall-user-stories` | `trustfall/2-stories.md`         |
 | 3   | Architecture | `trustfall-architecture` | `trustfall/3-architecture.md`    |
 | 4   | Module trees | `trustfall-module-trees` | `trustfall/4-module-trees.md`    |
-| 5   | Code         | `trustfall-code`         | the project's source code folder |
+| 5   | Commits      | `trustfall-commits`      | the Git repository               |
+| 6   | Code         | `trustfall-code`         | the project's source code folder |
 
 Truths live in `trustfall/truths.md`.
 
@@ -50,13 +51,15 @@ Use the exact names of Concepts from Level 1 on every Level.
 ## Writing Items
 
 Write the Level to its file in the Trustfall folder, as Markdown, in the format
-its Level skill gives.
+its Level skill gives. Commits are the exception: plan them in your context,
+and the Code Level makes them in the Git repository.
 
 ## Validating the Items a change touched
 
 After writing a Level, validate the Items the change touched with the
 `trustfall-validation` skill: run the Level checks between this Level and the
-Levels above. Fix every failing check before descending.
+Levels above. Fix every failing check before descending. Commits are validated
+together with the Code, once the change is done.
 
 ## Going back up
 
@@ -68,9 +71,9 @@ Descend again one Level at a time.
 Going back up is a decision, not a failure; it is how the project ends up
 modelled perfectly.
 
-## Asking the initial Truths before Code
+## Asking the initial Truths before Commits
 
-In the first Descent, after Module trees and right before Code, ask the user what
+In the first Descent, after Module trees and right before Commits, ask the user what
 must hold true of the project: languages, tools, tests, formats, conventions,
 licence. Write each answer as a Truth in `trustfall/truths.md`:
 

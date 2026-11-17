@@ -25,11 +25,12 @@ Leave this part out when the check covers the whole project: the first
 validation, a validation after a failed or skipped one, and a new or changed
 Truth.
 
-## Reading the Levels, Truths and Code
+## Reading the Levels, Truths, Commits and Code
 
 ```text
 The Levels are in <path>/trustfall/: 1-concepts.md, 2-stories.md,
 3-architecture.md, 4-module-trees.md, and the Truths in truths.md.
+The Commits of the change are <commit range> in the Git repository.
 The Code is in <source code folder>.
 Read what you need. You may run read-only commands and the project's own
 checks. Do not change any file.

@@ -11,7 +11,7 @@ Trustfall skill
 ├── Writing Items
 ├── Validating the Items a change touched
 ├── Going back up
-├── Asking the initial Truths before Code
+├── Asking the initial Truths before Commits
 └── Preferring simplicity
 ```
 
@@ -47,15 +47,27 @@ Trustfall skill
 └── Module tree format
 ```
 
-## 5 Code skill
+## 5 Commits skill
 
 ```text
-5 Code skill
+5 Commits skill
+├── Commit purpose
+├── Reading the Truths
+├── Planning the perfect story
+├── Commit format
+└── Rewriting the Commits not yet shared
+```
+
+## 6 Code skill
+
+```text
+6 Code skill
 ├── Code purpose
 ├── Reading the Truths
 ├── One code unit per Module
-├── Writing Code
-└── Validating the Code a change touched
+├── Writing Code one Commit at a time
+├── Running the project's own checks on every Commit
+└── Validating the Commits and Code a change touched
 ```
 
 ## Validation skill holding the Commandments
@@ -95,6 +107,20 @@ Source code folder
 Validator subagent with no history
 ├── Brief
 ├── What the change touched
-├── Reading the Levels, Truths and Code
+├── Reading the Levels, Truths, Commits and Code
 └── Verdict
+```
+
+## Git repository
+
+```text
+Git repository
+└── Commits of a change
+```
+
+## Project's own checks
+
+```text
+Project's own checks
+└── Checks of the project
 ```

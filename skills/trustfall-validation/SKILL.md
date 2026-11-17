@@ -1,6 +1,6 @@
 ---
 name: trustfall-validation
-description: Trustfall validation — holds the immutable Commandments and validates Levels, Code and Truths with Validator subagents that have no history of the work. Use after writing any Trustfall Level, while writing Code, and always before calling Trustfall work done.
+description: Trustfall validation — holds the immutable Commandments and validates Levels, Commits, Code and Truths with Validator subagents that have no history of the work. Use after writing any Trustfall Level, after making the Commits and Code of a change, and always before calling Trustfall work done.
 ---
 
 # Validation
@@ -17,7 +17,7 @@ apart from the project's Truths, and can never be changed or overridden.
    Level below it.
 4. **Bite-sized Items.** Every Item is digestible on its own.
 5. **Simplicity.** Nothing exists that the Levels above do not need.
-6. **Truths affect only Code.** Levels 1–4 never depend on a Truth.
+6. **Truths affect only Commits and Code.** Levels 1–4 never depend on a Truth.
 7. **Validated before done.** Nothing is done until every Level check,
    Truth and Commandment passes.
 
@@ -27,13 +27,14 @@ Every Commandment is its own check.
 
 Run the checks for the Level that was written, each as its own check:
 
-| Level        | Checks                                                                                                                                                                                                                |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Concepts     | Every Concept has one name and one meaning. Concepts contain no behaviour or technology.                                                                                                                              |
-| User stories | Every capitalised term in a story is a Concept. Every Concept is used by a story.                                                                                                                                     |
-| Architecture | Every story is possible with the drawn Blocks and edges. Every Block and edge has a source above. Only Mermaid diagrams of Blocks, nothing inside them.                                                               |
-| Module trees | Every Block has one tree and every tree a Block. Every edge is implemented by a Module. Every Module has a source above. Names are obvious, no duplicates; Modules that implement different edges are not duplicates. |
-| Code         | Every Module has a code unit. Every code unit and every detail Code adds serves a Module or a Truth. No behaviour beyond the User stories.                                                                            |
+| Level        | Checks                                                                                                                                                                                                                                    |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Concepts     | Every Concept has one name and one meaning. Concepts contain no behaviour or technology.                                                                                                                                                  |
+| User stories | Every capitalised term in a story is a Concept. Every Concept is used by a story.                                                                                                                                                         |
+| Architecture | Every story is possible with the drawn Blocks and edges. Every Block and edge has a source above. Only Mermaid diagrams of Blocks, nothing inside them.                                                                                   |
+| Module trees | Every Block has one tree and every tree a Block. Every edge is implemented by a Module. Every Module has a source above. Names are obvious, no duplicates; Modules that implement different edges are not duplicates.                     |
+| Commits      | Every Commit is one atomic step and derives from the Levels above. Every Commit passes the project's own checks on its own. Every message says what the Commit does and why. Together the Commits make the whole change and nothing more. |
+| Code         | Every Module has a code unit. Every code unit and every detail Code adds serves a Module or a Truth. No behaviour beyond the User stories. Every Commit's Code does what its message says.                                                |
 
 A capitalised term in the middle of a sentence on any Level must be a Concept,
 in any word form, such as Descend for Descent.
@@ -47,7 +48,7 @@ Every Truth in `trustfall/truths.md` is its own check, using its
 
 ## Checking only what a change touched
 
-After a change, validate only what it touched: the Items and Code in its diff,
+After a change, validate only what it touched: the Items, Commits and Code in its diff,
 and every Item and code unit that refers to, or is referred to by, something
 the diff changed or removed. Run the Level checks of every Level the change
 touched, every Commandment and every Truth on those parts only; the Levels
