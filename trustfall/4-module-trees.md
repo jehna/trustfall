@@ -11,7 +11,7 @@ Trustfall skill
 ├── Writing Items
 ├── Validating the Items a change touched
 ├── Going back up
-├── Asking the initial Constraints before Code
+├── Asking the initial Truths before Code
 └── Preferring simplicity
 ```
 
@@ -52,7 +52,7 @@ Trustfall skill
 ```text
 5 Code skill
 ├── Code purpose
-├── Reading the Constraints
+├── Reading the Truths
 ├── One code unit per Module
 ├── Writing Code
 └── Validating the Code a change touched
@@ -64,7 +64,7 @@ Trustfall skill
 Validation skill holding the Commandments
 ├── Commandments
 ├── Level checks
-├── Constraint checks
+├── Truth checks
 ├── Checking only what a change touched
 ├── One Validator subagent per check
 ├── Light model for mechanical checks
@@ -79,7 +79,7 @@ Trustfall folder
 ├── User stories file
 ├── Architecture file
 ├── Module trees file
-└── Constraints file
+└── Truths file
 ```
 
 ## Source code folder
@@ -95,6 +95,6 @@ Source code folder
 Validator subagent with no history
 ├── Brief
 ├── What the change touched
-├── Reading the Levels, Constraints and Code
+├── Reading the Levels, Truths and Code
 └── Verdict
 ```

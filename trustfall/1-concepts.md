@@ -13,7 +13,7 @@ Trustfall — a way of working that maximises trust between a human and an agent
 │       │   │   └── Module — one part of what is built on a Block
 │       │   └── 5 Code — the implementation
 │       └── Item — one single thing on a Level, digestible on its own
-├── Constraint — a rule that describes "how" things are done in one project. Only affects code.
+├── Truth — a statement that must hold true of one project: how it is built or what it is. Only affects Code.
 ├── Commandment — a rule that comes from Trustfall itself and can never be changed or overridden
 └── Verdict — the result of one check: Pass, or Fail with its reasons
 ```

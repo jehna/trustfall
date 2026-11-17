@@ -15,7 +15,7 @@ flowchart TD
   trustfall -- loads one Level at a time, from the topmost, with the Levels above it --- load
   load --> concepts & stories & architecture & modules & code
   trustfall -- reads the Levels above --> levels
-  trustfall -- before Code, writes the initial Constraints asked from the user --> levels
+  trustfall -- before Code, writes the initial Truths asked from the user --> levels
 ```
 
 ## Writing Items and Code
@@ -27,7 +27,7 @@ flowchart TD
   levels[(Trustfall folder in the file system)]
   source[(Source code folder in the file system)]
   trustfall -- writes the current Level's Items --> levels
-  code -- reads the Constraints --> levels
+  code -- reads the Truths --> levels
   code -- writes --> source
 ```
 
@@ -43,8 +43,8 @@ flowchart TD
   source[(Source code folder in the file system)]
   trustfall -- validates the Items a change touched against the Levels above with --> validation
   code -- validates the Code a change touched against the Levels above with --> validation
-  validation -- validates the Commandments and the Constraints on what a change touched, and a new or changed Constraint on the whole project, with --> subagent
-  subagent -- reads Levels and Constraints --> levels
+  validation -- validates the Commandments and the Truths on what a change touched, and a new or changed Truth on the whole project, with --> subagent
+  subagent -- reads Levels and Truths --> levels
   subagent -- reads --> source
   subagent -- returns Pass, or Fail with its reasons --> validation
 ```

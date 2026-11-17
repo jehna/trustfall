@@ -1,6 +1,6 @@
 ---
 name: trustfall-validation
-description: Trustfall validation — holds the immutable Commandments and validates Levels, Code and Constraints with Validator subagents that have no history of the work. Use after writing any Trustfall Level, while writing Code, and always before calling Trustfall work done.
+description: Trustfall validation — holds the immutable Commandments and validates Levels, Code and Truths with Validator subagents that have no history of the work. Use after writing any Trustfall Level, while writing Code, and always before calling Trustfall work done.
 ---
 
 # Validation
@@ -8,7 +8,7 @@ description: Trustfall validation — holds the immutable Commandments and valid
 ## Commandments
 
 Commandments are Trustfall's own rules. They hold in every project, are kept
-apart from the project's Constraints, and can never be changed or overridden.
+apart from the project's Truths, and can never be changed or overridden.
 
 1. **Descent.** Each Level is designed only from the Levels above it.
 2. **Fidelity.** Every Item derives from the Levels above, and each Level
@@ -17,9 +17,9 @@ apart from the project's Constraints, and can never be changed or overridden.
    Level below it.
 4. **Bite-sized Items.** Every Item is digestible on its own.
 5. **Simplicity.** Nothing exists that the Levels above do not need.
-6. **Constraints affect only Code.** Levels 1–4 never depend on a Constraint.
+6. **Truths affect only Code.** Levels 1–4 never depend on a Truth.
 7. **Validated before done.** Nothing is done until every Level check,
-   Constraint and Commandment passes.
+   Truth and Commandment passes.
 
 Every Commandment is its own check.
 
@@ -33,16 +33,16 @@ Run the checks for the Level that was written, each as its own check:
 | User stories | Every capitalised term in a story is a Concept. Every Concept is used by a story.                                                                                                                                     |
 | Architecture | Every story is possible with the drawn Blocks and edges. Every Block and edge has a source above. Only Mermaid diagrams of Blocks, nothing inside them.                                                               |
 | Module trees | Every Block has one tree and every tree a Block. Every edge is implemented by a Module. Every Module has a source above. Names are obvious, no duplicates; Modules that implement different edges are not duplicates. |
-| Code         | Every Module has a code unit. Every code unit and every detail Code adds serves a Module or a Constraint. No behaviour beyond the User stories.                                                                       |
+| Code         | Every Module has a code unit. Every code unit and every detail Code adds serves a Module or a Truth. No behaviour beyond the User stories.                                                                            |
 
 A capitalised term in the middle of a sentence on any Level must be a Concept,
 in any word form, such as Descend for Descent.
 A word that starts with a lowercase letter is plain language and needs no
 Concept. Block names, Module names and Code may use plain language.
 
-## Constraint checks
+## Truth checks
 
-Every Constraint in `trustfall/constraints.md` is its own check, using its
+Every Truth in `trustfall/truths.md` is its own check, using its
 `Verify:` line.
 
 ## Checking only what a change touched
@@ -50,17 +50,17 @@ Every Constraint in `trustfall/constraints.md` is its own check, using its
 After a change, validate only what it touched: the Items and Code in its diff,
 and every Item and code unit that refers to, or is referred to by, something
 the diff changed or removed. Run the Level checks of every Level the change
-touched, every Commandment and every Constraint on those parts only; the Levels
+touched, every Commandment and every Truth on those parts only; the Levels
 above them are read as they are, not judged. A check that matches two lists,
 such as every Concept is used by a story, compares the whole lists. A new or
-changed Constraint is checked on the whole project.
+changed Truth is checked on the whole project.
 
 The first validation of a project, and any validation after a failed or skipped
 one, checks the whole project.
 
-Before work is called done, every Level check, Commandment and Constraint must
+Before work is called done, every Level check, Commandment and Truth must
 pass on what the change touched. Everything else passed when it last changed,
-so the whole project then passes every Level check, Constraint and Commandment.
+so the whole project then passes every Level check, Truth and Commandment.
 
 ## One Validator subagent per check
 

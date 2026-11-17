@@ -34,7 +34,7 @@ To understand Trustfall, read how it is designed with itself, in
 2. [User stories](trustfall/2-stories.md)
 3. [Architecture](trustfall/3-architecture.md)
 4. [Module trees](trustfall/4-module-trees.md)
-5. [Constraints](trustfall/constraints.md)
+5. [Truths](trustfall/truths.md)
 
 ### Initial Configuration
 
@@ -85,25 +85,26 @@ repository.
 - Five Levels, each designed only from the Levels above it
 - One skill per Level, loaded one at a time
 - Validation by subagents with no history of the work
-- Commandments that hold in every project, kept apart from its Constraints
+- Commandments that hold in every project, kept apart from its Truths
 - Works with Claude Code, Codex, Antigravity, Pi and OpenCode
 
 ## Configuration
 
-Each project configures Trustfall through its Constraints in
-`trustfall/constraints.md`. The agent asks for them before writing Code.
+Each project configures Trustfall through its Truths in
+`trustfall/truths.md`. The agent asks for them before writing Code.
 
-### Constraint
+### Truth
 
 Type: `Markdown list item`  
 Default: none
 
-A rule for how the project is built. It only affects Code.
+A statement that must hold true of the project: how it is built or what it is.
+It only affects Code.
 
 Example:
 
 ```markdown
-- C1: Every User story is covered by a browser test.
+- T1: Every User story is covered by a browser test.
   Verify: for each story ID there is a browser test that names it, and the tests pass.
 ```
 

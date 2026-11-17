@@ -1,6 +1,6 @@
 ---
 name: trustfall
-description: Trustfall maximises trust between a human and an agent or a teammate by describing a project on five Levels — Concepts, User stories, Architecture, Module trees and Code — each derived only from the Levels above it. Use when starting a Trustfall project, when changing anything in a project that has a `trustfall/` folder, or when the user mentions Trustfall, Descent, Levels, Constraints or Commandments.
+description: Trustfall maximises trust between a human and an agent or a teammate by describing a project on five Levels — Concepts, User stories, Architecture, Module trees and Code — each derived only from the Levels above it. Use when starting a Trustfall project, when changing anything in a project that has a `trustfall/` folder, or when the user mentions Trustfall, Descent, Levels, Truths or Commandments.
 ---
 
 # Trustfall
@@ -14,9 +14,10 @@ trust everything below them.
 
 Each Level is made of Items: single things that are digestible on their own.
 
-Levels say **what** is built. Constraints say **how** it is built, and they only
-affect Code. Commandments are Trustfall's own rules; they come from the
-`trustfall-validation` skill and can never be changed or overridden.
+Levels say **what** is built. Truths say what must hold true of the project:
+how it is built or what it is. They only affect Code. Commandments are
+Trustfall's own rules; they come from the `trustfall-validation` skill and can
+never be changed or overridden.
 
 ## Level map
 
@@ -28,7 +29,7 @@ affect Code. Commandments are Trustfall's own rules; they come from the
 | 4   | Module trees | `trustfall-module-trees` | `trustfall/4-module-trees.md`    |
 | 5   | Code         | `trustfall-code`         | the project's source code folder |
 
-Constraints live in `trustfall/constraints.md`.
+Truths live in `trustfall/truths.md`.
 
 ## Descent from the topmost Level
 
@@ -67,18 +68,18 @@ Descend again one Level at a time.
 Going back up is a decision, not a failure; it is how the project ends up
 modelled perfectly.
 
-## Asking the initial Constraints before Code
+## Asking the initial Truths before Code
 
-In the first Descent, after Module trees and right before Code, ask the user how
-the project must be built: languages, tools, tests, formats, conventions. Write
-each answer as a Constraint in `trustfall/constraints.md`:
+In the first Descent, after Module trees and right before Code, ask the user what
+must hold true of the project: languages, tools, tests, formats, conventions,
+licence. Write each answer as a Truth in `trustfall/truths.md`:
 
 ```markdown
-- C1: Every User story is covered by a browser test.
+- T1: Every User story is covered by a browser test.
   Verify: for each story ID there is a browser test that names it, and the tests pass.
 ```
 
-Every Constraint has a stable ID, a statement and a `Verify:` line that tells a
+Every Truth has a stable ID, a statement and a `Verify:` line that tells a
 Validator subagent how to check it.
 
 ## Preferring simplicity
