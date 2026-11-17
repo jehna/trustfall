@@ -14,3 +14,5 @@
   Verify: README.md tells the reader to read the files in `trustfall/` and links to every file in that folder.
 - T7: The project is MIT licensed.
   Verify: LICENSE holds the MIT license text, package.json has `"license": "MIT"`, and README.md says the project is licensed under MIT and links to LICENSE.
+- T8: README shows the teaser GIF.
+  Verify: README.md embeds `trustfall-teaser.gif` near its top, with alt text, and the file exists in the repository.

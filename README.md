@@ -2,6 +2,8 @@
 
 > Agent skills that build trust in code by designing it on five reviewable Levels
 
+![Trustfall teaser](trustfall-teaser.gif)
+
 Code is the hardest thing to review. Trustfall describes a project on five
 Levels — Concepts, User stories, Architecture, Module trees and Code — and
 designs each Level only from the Levels above it. Every Level is small, plain
