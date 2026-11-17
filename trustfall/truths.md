@@ -12,3 +12,5 @@
   Verify: the skills instruct launching every Validator subagent of a validation run at once.
 - T6: README tells the reader to read the files in the Trustfall folder and links to each of them.
   Verify: README.md tells the reader to read the files in `trustfall/` and links to every file in that folder.
+- T7: The project is MIT licensed.
+  Verify: LICENSE holds the MIT license text, package.json has `"license": "MIT"`, and README.md says the project is licensed under MIT and links to LICENSE.
