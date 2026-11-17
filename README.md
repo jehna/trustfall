@@ -10,7 +10,8 @@ and designs each Level only from the Levels above it. Every Level is small and
 validated against the Levels above by fresh agents with no history of the work.
 Before any Code is written, the Commits of a change are planned as the perfect
 story of how it would be built in a perfect world. When you trust the upper
-Levels, you can trust what follows from them, whether the code was written by an agent or a teammate.
+Levels, you can trust what follows from them, whether the code was written by
+an agent or a teammate.
 
 ## Installing / Getting started
 
